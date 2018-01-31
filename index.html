@@ -11,9 +11,11 @@
   <body>
     <h1>PixelArtMaker</h1>
     <div class="form">
-      <h3>Grid Height: </h3><input id="size"></input>
-      <h3>Grid Width: </h3><input id="size"></input><br>
+      <h3>Grid Height: </h3><input id="size" type="number" min="1" max="30" value="1"></input>
+      <h3>Grid Width: </h3><input id="size" type="number" min="1" max="30" value="1"></input><br>
       <button id="submit" value="submit">Submit</button>
+      <input type="color" id="color-picker">
+
     </div>
   </body>
 </html>
