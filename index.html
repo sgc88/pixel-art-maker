@@ -3,25 +3,25 @@
   <head>
 
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="app.js"></script>
     <title>Pixel Art Maker</title>
   </head>
   <body>
     <h1>PixelArtMaker</h1>
-    <form id="sizePicker">
-      <h3>Grid Height: </h3><input id="sizeHeight" type="number" min="1" max="50" value="1"></input>
-      <h3>Grid Width: </h3><input id="sizeWidth" type="number" min="1" max="50" value="1"></input><br>
-      <button id="submit" value="submit" type="submit">Submit</button><br>
+    <form id="sizePicker" onClick="makeGrid()">
+        <h3>Grid Height: </h3><input id="sizeHeight" type="number" min="1"  value="1"></input>
+        <h3>Grid Width: </h3><input id="sizeWidth" type="number" min="1" value="1"></input><br>
+        <input id="submit" name="submit" type="submit"/>
     </form>
     <h3>Pick Color: </h3>
     <input type="color" id="color-picker"><br>
     <table id="pixelCanvas">
-      <tr><td class="cell"></td></tr>
+        <tr><td class="cell"></td></tr>
     </table>
-    <canvas id="my_canvas" class="my_canvas" width="20" height="20"></canvas>
-
+    <canvas id="canvas" class="my_canvas" width="500" height="500"></canvas>
   </body>
 </html>

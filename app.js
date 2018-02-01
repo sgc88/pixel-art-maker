@@ -1,16 +1,20 @@
 $(document).ready(function(){
 $("#submit").on("click", function makeGrid(){
+  
   var newWidth = $("#sizeWidth").val();
   var newHeigth = $("#sizeHeight").val();
-  console.log("you picked the size")
+  console.log("you picked the size");
+for(i=0; i <= newWidth.length && newHeigth.length; i++ ){
 
-  $("#cell").width(newWidth);
-  $("#cell").height(newHeigth);
+}
+  var cell= $("#pixelCanvas").append("<tr><td></td></tr>");
+  $(cell).addClass("cell");
 
 
-  console.log("welcome to art with pixels page!");
+  return false;
 
 });
+
 
 var canvas, ctx,
     brush = {

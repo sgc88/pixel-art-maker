@@ -10,6 +10,10 @@ body{
   margin-bottom:10%;
 }
 
+#canvas{
+  background-color: aqua;
+}
+
 table,
 tr,
 td {
