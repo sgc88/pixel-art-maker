@@ -3,7 +3,7 @@
   background-color: aqua;
 }
 body{
-  background-image:url("pa.png");
+
   text-align: center;
 }
 #color-picker{
@@ -23,14 +23,6 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
-}
-
-tr {
-    height: 20px;
-}
-
-td {
-    width: 20px;
 }
 
 input[type=number] {

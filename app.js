@@ -1,21 +1,4 @@
 $(document).ready(function(){
-$("#submit").on("click", function makeGrid(){
-  
-  var newWidth = $("#sizeWidth").val();
-  var newHeigth = $("#sizeHeight").val();
-  console.log("you picked the size");
-for(i=0; i <= newWidth.length && newHeigth.length; i++ ){
-
-}
-  var cell= $("#pixelCanvas").append("<tr><td></td></tr>");
-  $(cell).addClass("cell");
-
-
-  return false;
-
-});
-
-
 var canvas, ctx,
     brush = {
         x: 0,
@@ -29,9 +12,37 @@ var canvas, ctx,
 $('#color-picker').on("input", function(){
     brush.color = this.value;
 
-});
-
-
-
+  });
 
 });
+
+function addTable() {
+
+    var myTable = document.getElementById("myDynamicTable");
+
+    var table = document.createElement('TABLE');
+    table.border='1';
+
+    var tableBody = document.createElement('TBODY');
+    table.appendChild(tableBody);
+
+    for (var i=0; i<= 20; i++){
+       var tr = document.createElement('TR');
+       tableBody.appendChild(tr);
+
+       for (var j=0; j<= 20; j++){
+           var td = document.createElement('TD');
+           td.width="25";
+           td.height = "25"
+           tr.appendChild(td);
+       }
+    }
+    myTable.appendChild(table);
+       return false;
+}
+
+function load() {
+
+    console.log("Page load finished");
+
+}
