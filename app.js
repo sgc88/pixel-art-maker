@@ -26,11 +26,14 @@ function addTable() {
     var tableBody = document.createElement('TBODY');
     table.appendChild(tableBody);
 
-    for (var i=0; i<= 20; i++){
+    var sizeWidth = document.getElementById("sizeWidth").value;
+    var sizeHeight = document.getElementById("sizeHeight").value;
+
+    for (var i=0; i<= sizeWidth; i++){
        var tr = document.createElement('TR');
        tableBody.appendChild(tr);
 
-       for (var j=0; j<= 20; j++){
+       for (var j=0; j<= sizeHeight; j++){
            var td = document.createElement('TD');
            td.width="25";
            td.height = "25"
