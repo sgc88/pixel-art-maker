@@ -16,32 +16,23 @@ $('#color-picker').on("input", function(){
 
 });
 
-function addTable() {
-
-    var myTable = document.getElementById("myDynamicTable");
-
-    var table = document.createElement('TABLE');
-    table.border='1';
-
-    var tableBody = document.createElement('TBODY');
-    table.appendChild(tableBody);
-
-    var sizeWidth = document.getElementById("sizeWidth").value;
-    var sizeHeight = document.getElementById("sizeHeight").value;
-
-    for (var i=0; i<= sizeWidth; i++){
-       var tr = document.createElement('TR');
-       tableBody.appendChild(tr);
-
-       for (var j=0; j<= sizeHeight; j++){
-           var td = document.createElement('TD');
-           td.width="25";
-           td.height = "25"
-           tr.appendChild(td);
-       }
+function makeGrid()
+{
+//grab the gridWidth element and store it in var
+var rowNum = document.getElementById("sizeW").value;
+//grab the gridHight element and store it in var
+var coNum = document.getElementById("sizeH").value;
+//using nested for loop to get the value of pixels input
+ for(var row=0; row < parseInt(rowNum); row++)
+  {
+   var x=document.getElementById('myTable').insertRow(row);
+   for(var col=0; col <parseInt(coNum); col++)
+    {
+     var y=  x.insertCell(col);
+     y.width="25px";
+     y.height="25px";
     }
-    myTable.appendChild(table);
-       return false;
+   }
 }
 
 function load() {
