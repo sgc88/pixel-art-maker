@@ -1,11 +1,33 @@
 
-#sizeHeight, #sizeWidth{
-  background-color: aqua;
+#sizeH, #sizeW{
+  background-color: #f0f0ff;
 }
 body{
-
   text-align: center;
 }
 #color-picker{
   margin-bottom:10%;
 }
+
+#myTable{
+  margin-left: 45%;
+
+}
+
+.header{
+  height: 200px;
+  width: 100%;
+  background-image: url(header.png);
+  font-size: 50px;
+  text-align:center;
+  color: orange;
+  margin-top:0;
+  }
+  h1{
+    padding-top: 50px;
+    margin: 0;
+  }
+  form{
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
