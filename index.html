@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link href="style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="app.js"></script>
     <title>Pixel Art Maker</title>
   </head>
   <body>
     <h1>PixelArtMaker</h1>
     <h3>Pick Color: </h3>
-    <input type="color" id="color-picker">
+    <input id="color-picker" type="color" value="#000000">
     <div>
         <h3>Grid Height: </h3><input id="sizeW" type="number" min="1" max="30" value="1"></input>
         <h3>Grid Width: </h3><input id="sizeH" type="number" min="1" max="30" value="1"></input><br>
@@ -22,5 +21,7 @@
       <input type="button" onclick="makeGrid()" value="Submit">
     </form><br>
       <table id="myTable" border="1">Your Table:</table>
+      <script src="app.js"></script>
+
   </body>
 </html>

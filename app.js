@@ -1,20 +1,3 @@
-$(document).ready(function(){
-var canvas, ctx,
-    brush = {
-        x: 0,
-        y: 0,
-        color: '#000000',
-        size: 10,
-        click: false,
-    }
-
-
-$('#color-picker').on("input", function(){
-    brush.color = this.value;
-
-  });
-
-});
 
 function makeGrid()
 {
@@ -28,12 +11,20 @@ var coNum = document.getElementById("sizeH").value;
    var x=document.getElementById('myTable').insertRow(row);
    for(var col=0; col <parseInt(coNum); col++)
     {
+      //insert row in column
      var y=  x.insertCell(col);
+     //set a size for pixels
      y.width="25px";
      y.height="25px";
     }
    }
 }
+
+//grab a color-picker element from dom
+var color = document.getElementById("color-picker");
+//adding eventlistener so we can click on it to assign a value
+color.addEventListener("onclick", function(){});
+
 
 function load() {
 
