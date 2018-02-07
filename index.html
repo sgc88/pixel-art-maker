@@ -17,12 +17,15 @@
     <div>
         <h3>Grid Height: </h3><input id="sizeW" type="number" min="1" max="30" value="1"></input>
         <h3>Grid Width: </h3><input id="sizeH" type="number" min="1" max="30" value="1"></input><br>
-    </div>
+    </div><br>
       <input type="button" onclick="makeGrid()" value="Submit">
       <h3>Pick Color: </h3>
       <input id="color-picker" type="color" value="#000000">
+      <div class="table">
+        <table id="myTable" border="1">Your Table:</table>
+      </div>
   </form>
-  <table id="myTable" border="1">Your Table:</table>
+
 
   <script src="app.js"></script>
   </body>
