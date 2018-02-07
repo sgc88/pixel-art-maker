@@ -4,6 +4,7 @@
 }
 body{
   text-align: center;
+  /* background-image: url(pineapple.png); */
 }
 #color-picker{
   margin-bottom:10%;
@@ -11,6 +12,7 @@ body{
 
 #myTable{
   margin-left: 45%;
+  background-image: none;
 
 }
 

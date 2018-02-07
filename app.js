@@ -16,6 +16,9 @@ var coNum = document.getElementById("sizeH").value;
      //set a size for pixels
      y.width="25px";
      y.height="25px";
+     //setting up our event to append to the pixel so we can change the color of it with using fillPixel function
+     y.addEventListener("click", fillPixel);
+
     }
    }
 }
@@ -24,6 +27,11 @@ var coNum = document.getElementById("sizeH").value;
 var color = document.getElementById("color-picker");
 //adding eventlistener so we can click on it to assign a value
 color.addEventListener("onclick", function(){});
+
+function fillPixel () {
+  //setting an attribute to be able to style our pixels with chosen color
+    this.setAttribute("style", `background-color: ${color.value}`);
+}
 
 
 function load() {
