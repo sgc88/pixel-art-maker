@@ -19,7 +19,10 @@ var coNum = document.getElementById("sizeH").value;
      //setting up our event to append to the pixel so we can change the color of it with using fillPixel function
      y.addEventListener("click", fillPixel);
 
+
     }
+    //disable the submit button to prevent from resubmission
+    document.getElementById("submit").disabled=true;
    }
 }
 
@@ -27,11 +30,16 @@ var coNum = document.getElementById("sizeH").value;
 var table =document.getElementById('myTable');
 function clearGrid(){
     while (table.firstChild){
+          //clear out the table
          table.removeChild(table.firstChild);
-         //grab the gridWidth element and store it in var
+         //grab the gridWidth element and set the value
          var rowNum = document.getElementById("sizeW").value= "1";
-         //grab the gridHight element and store it in var
+         //grab the gridHight element and set the value
          var coNum = document.getElementById("sizeH").value= "1";
+         //enable submit button back
+         document.getElementById("submit").disabled=false;
+
+
     }
 
 }
