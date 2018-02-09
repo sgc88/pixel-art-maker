@@ -23,6 +23,19 @@ var coNum = document.getElementById("sizeH").value;
    }
 }
 
+
+var table =document.getElementById('myTable');
+function clearGrid(){
+    while (table.firstChild){
+         table.removeChild(table.firstChild);
+         //grab the gridWidth element and store it in var
+         var rowNum = document.getElementById("sizeW").value= "1";
+         //grab the gridHight element and store it in var
+         var coNum = document.getElementById("sizeH").value= "1";
+    }
+
+}
+
 //grab a color-picker element from dom
 var color = document.getElementById("color-picker");
 //adding eventlistener so we can click on it to assign a value
