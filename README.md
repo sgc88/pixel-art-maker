@@ -32,10 +32,11 @@ Technologies
   * HTML
   * javaScript
     - addEventListener
-    - nested for loops.
+    - nested for loops
     - parseInt
     - insertCell
     - setAttribute
+    - disable
   * CSS
 
 
@@ -56,3 +57,12 @@ Planned Features
 * User authentication and authorization.
 * Users can show, create, update, and delete table.
 * Users can save their existing tables that they have created and painted.
+
+Resources
+-------------------
+
+* https://developer.mozilla.org/en-US/docs/MDN/Doc_status
+* https://stackoverflow.com/
+* https://www.safaribooksonline.com/library/view/javascript-cookbook/9781449390211/ch09s08.html
+* https://www.w3schools.com/
+* http://wesbos.com/template-strings-html/
