@@ -1,5 +1,5 @@
 
-#sizeH, #sizeW{
+#size-h, #size-w{
   background-color: #f0f0ff;
 }
 body{
@@ -10,7 +10,7 @@ body{
   margin-bottom:10%;
 } */
 
-#myTable{
+#my-table{
   margin-left: 45%;
   background-image: none;
 
