@@ -46,7 +46,6 @@ Technologies
 Existing Features
 -------------------
 * Users can create and paint canvas they have created.
-* Users can use Google map to search for places for reference.
 
 
 ----------
